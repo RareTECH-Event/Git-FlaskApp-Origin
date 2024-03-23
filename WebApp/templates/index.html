@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>Profile</title>
+    <meta
+      name="description"
+      content="テキストテキストテキストテキストテキストテキストテキストテキスト"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="../static/img/favicon.ico" />
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link rel="stylesheet" href="../static/css/styles.css" />
+  </head>
+
+  <body>
+    <header id="header" class="wrapper">
+      <h1 class="site-title">
+        <a href="index.html">
+          <img src="../static/img/logo.svg" alt="Profile" />
+        </a>
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="#question1">Question１</a></li>
+          <li><a href="#pages">Pages</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div id="mainvisual">
+        <img src="../static/img/laptop.jpg" alt="テキストテキストテキスト" />
+      </div>
+
+      <section id="question1" class="wrapper">
+        <h2 class="section-title">問題１</h2>
+        <div class="content">
+          <img src="../static/img/about.jpg" alt="テキストテキストテキスト" />
+          <div class="text">
+            <h3 class="content-title">こんにちは、○○です！</h3>
+            <p>
+              ↑の「こんにちは○○です！」の○○の箇所に、
+              <br />
+              ログインで使用した名前を表示させてください。
+              <br />
+              （※ バックエンドと連携して作業してね！）
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="pages" class="wrapper">
+        <h2 class="section-title">Pages</h2>
+        <ul>
+          <li>
+            <img
+              src="../static/img/keyboard.jpg"
+              alt="テキストテキストテキスト"
+            />
+            <h3 class="content-title">問題２</h3>
+            <p>別のページを作り、ここから遷移してください</p>
+          </li>
+          <li>
+            <a href="{{ url_for('error') }}">
+              <img
+                src="../static/img/not-found.jpg"
+                alt="テキストテキストテキスト"
+              />
+            </a>
+            <h3 class="content-title">
+              <a href="{{ url_for('error') }}">押してください</a>
+            </h3>
+            <p>別ページに飛びます！</p>
+          </li>
+          <li>
+            <img
+              src="../static/img/bicycle3.jpg"
+              alt="テキストテキストテキスト"
+            />
+            <h3 class="content-title">問題３</h3>
+            <p>
+              この自転車の画像を、imgディレクトリにある「パソコン.jpg」の画像に変換してください
+            </p>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <p>&copy; 2020 Profile</p>
+    </footer>
+  </body>
+</html>
