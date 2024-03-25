@@ -1,6 +1,14 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request, redirect
 
 app = Flask(__name__)
+
+@app.route('/login')
+def login():
+    return render_template('login.html')
+
+@app.route('/login', methods=['post'])
+def authentication():
+    return redirect('/')
 
 @app.route('/')
 def index():
